@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Rubik:400,700&display=swap');
 
+/*@media (max-width: 2500px) {
+  .card-white{
+   width: 960px;
+  }
+}
+*/
+
 body{
   font-family: 'Quicksand', sans-serif;
   background-color: #eeeee9;
@@ -41,7 +48,9 @@ ul {
 }
 
 .card-white {
+ width: 960px;
  margin: 32px auto;
+ padding-bottom: 16px;
  text-align: center;
  border-width: 1px;
  border-color: rgba(48,48,48,0.25);
@@ -74,4 +83,21 @@ ul {
   margin: 0 24px;
 }
 
-
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .card-white {
+    width: 720px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .card-white {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .card-white {
+    width: 300px;
+  }
+}
