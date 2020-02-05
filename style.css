@@ -9,7 +9,8 @@
 
 body{
   font-family: 'Quicksand', sans-serif;
-  background-color: #eeeee9;
+  background-image: url("images/download.png");
+  background-repeat: repeat;
 }
 
 h1, h2{
